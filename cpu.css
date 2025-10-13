@@ -1,0 +1,41 @@
+
+    body {
+      background-color: #f7fafd;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .title span:first-child {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .gantt-box {
+      border: 2px solid black;
+      padding: 10px;
+      margin-right: 5px;
+      text-align: center;
+      border-radius: 5px;
+      min-width: 50px;
+    }
+    @media (max-width: 768px) {
+      .gantt-box {
+        min-width: 40px;
+        font-size: 0.85rem;
+        padding: 6px;
+      }
+    }
+
+    .time-label {
+  display: inline-block;
+  min-width: 25px; /* match gantt-box width */
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .time-label {
+    min-width: 20px; /* match small box */
+    font-size: 0.85rem;
+  }
+}
+
+  
