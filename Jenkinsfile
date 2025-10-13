@@ -44,7 +44,7 @@ pipeline {
                     docker rm -f %CONTAINER_NAME% || exit 0
 
                     REM Run new container
-                    docker run -d -p 8085:80 --name %CONTAINER_NAME% %DOCKER_USER%/%IMAGE_NAME%:%IMAGE_TAG%
+                    docker run -d -p 8088:80 --name %CONTAINER_NAME% %DOCKER_USER%/%IMAGE_NAME%:%IMAGE_TAG%
                 """
             }
         }
