@@ -3,16 +3,16 @@ pipeline {
 
     environment {
         DOCKER_USER = "omkar797283"               // 👈 Your Docker Hub username
-        IMAGE_NAME = "my-demo-web"
+        IMAGE_NAME = "my-mini-project"
         IMAGE_TAG = "latest"
         DOCKER_HUB_CRED = "DOCKER_PASS_ID"       // Jenkins credentials ID (Username+Password)
-        CONTAINER_NAME = "my-web-container"
+        CONTAINER_NAME = "my-mini-container"
     }
 
     stages {
         stage('Checkout SCM') {
             steps {
-                git branch: 'main', url: 'https://github.com/omkar2203030/DEMO.git'
+                git branch: 'main', url: 'https://github.com/omkar2203030/MINI_PROJECT.git'
             }
         }
 
