@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-mini-project-deployment
+  labels:
+    app: my-mini-project
+spec:
+  replicas: 3   # You can increase for scaling demonstration
+  selector:
+    matchLabels:
+      app: my-mini-project
+  template:
+    metadata:
+      labels:
+        app: my-mini-project
+    spec:
+      containers:
+      - name: my-mini-container
+        image: omkar797283/my-mini-project:latest   # 👈 matches Jenkins push
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always   # ensures it pulls latest image every time
