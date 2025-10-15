@@ -10,4 +10,4 @@ spec:
     - protocol: TCP
       port: 80 # service port (inside cluster)
       targetPort: 80 # container port
-      nodePort: 30008,30009 # external port (browser access)
+      nodePort: 30008 # external port (browser access)
